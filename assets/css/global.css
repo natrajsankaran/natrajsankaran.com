@@ -1,0 +1,292 @@
+body {
+  font-family: 'Poiret One', cursive;
+  max-height: 100vh;
+  /* background-image: url('../img/intro.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+
+/* Ref: https://www.w3schools.com/howto/howto_css_parallax.asp */
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/intro.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-section {
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.content-section h2, .content-section h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.content-section h2 {
+  font-size: 48px;
+}
+
+.content-section h3 {
+  font-size: 36px;
+}
+
+#scrollspyIntro p span {
+  border-right: solid 5px rgba(255, 255, 255, .75);
+  color: #ecca0b;
+  font-size: 48px;
+  text-shadow: 0 0 3px #FF0000;
+  text-decoration: underline;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+#scrollspyIntro p span {
+  animation: animated-text 4s linear 1s 1 normal both,
+    animated-cursor 600ms linear infinite;
+}
+
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 456px;
+  }
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#scrollspyOffering {
+  background-color: #a1a2a6;
+}
+
+#scrollspySkillset {
+  min-height: 0px;
+}
+
+#scrollspySkillset dt {
+  text-align: right;
+  padding-right: 60px;
+}
+
+#scrollspyChoosing {
+  color: white;
+  background-image: url("../img/slate-idea-minified.webp");
+}
+
+#scrollspyStartup {
+  min-height: 0px;
+}
+
+#scrollspyBilling {
+  height: auto;
+  color: white;
+  background-image: url("../img/pocket-watches-minified.webp");
+}
+
+#scrollspyBilling h3 {
+  padding-top: 10px;
+  text-align: left;
+}
+
+#scrollspyBilling td {
+  text-align: right;
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 40px;
+}
+
+#label1, #label2 {
+  font-size: 48px;
+}
+
+#homepageBW, #additionalBW, #formsBW, #dashBoardBW, #totalBW, #homepageEW, #additionalEW, #totalProductsEW, #formsEW, #dashBoardEW, #totalEW {
+  text-align: right;
+  padding-right: 20px;
+  margin-right: -20px;
+}
+
+#pricing1, #pricing2 {
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#scrollspyHire {
+  min-height: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  #brandNavbar, #menuNavbar {
+    color: white;
+  }
+
+  .navbar-natraj.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 50px;
+  }
+
+  .navbar-natraj.navbar-natraj-collapsed.navbar-light .navbar-nav .nav-link {
+    font-size: 32px;
+  }
+
+  #brandNavbar.navbar-natraj-collapsed {
+    display: none
+  }
+
+  .nav-subtitle-natraj {
+    /* margin-top: -20px; */
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: overline;
+  }
+
+  .navbar-natraj-collapsed .nav-subtitle-natraj {
+    font-size: 16px;
+  }
+
+  #menuNavbar .navbar-brand {
+    display: none
+  }
+
+  .navbar-menu-natraj.navbar-light .navbar-nav .nav-link {
+    margin-top: 125px;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: 32px;
+    border: 2px solid white;
+    border-radius: 25px;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light.bg-transparent {
+    background-color: #0d6efd !important;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-link {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(4) {
+    display: none;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(4) .nav-link {
+    margin-top: 0px;
+    border: 0px;
+    font-size: 24px;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(3) {
+    margin-right: 150px;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(4) {
+    display: inline-block;
+  }
+
+  .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(5) {
+    margin-left: 150px;
+  }
+
+  #scrollspyIntro {
+    padding-top: 300px;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    background-image: url("../img/intro.webp");
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .content-section {
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+
+  #brandNavbar {
+    display: none;
+  }
+
+  .navbar-menu-natraj.navbar-light.bg-transparent {
+    background-color: #0d6efd !important;
+    ;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: white;
+    font-size: 32px;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(4) {
+    display: none;
+  }
+
+  .content-section {
+    min-height: 0px;
+  }
+
+  #scrollspyIntro {
+    color: white;
+    background-image: url("../img/intro.webp");
+  }
+
+  #scrollspyIntro p span {
+    white-space: break-spaces;
+  }
+}
