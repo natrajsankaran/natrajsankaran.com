@@ -264,6 +264,14 @@ body, html {
     display: inline-block
   }
 
+  .navbar-menu-natraj.navbar-light .navbar-nav .nav-link, .navbar-natraj-collapsed.navbar-menu-natraj.navbar-light .navbar-nav .nav-link {
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 0px;
+    font-size: 18px;
+  }
+
   .navbar-menu-natraj.navbar-light.bg-transparent {
     background-color: #0d6efd !important;
     ;
@@ -288,7 +296,7 @@ body, html {
   }
 
   .navbar-menu-natraj.navbar-light .navbar-nav .nav-item:nth-child(4) {
-    display: none;
+    display: none !important;
   }
 
   .content-section {
